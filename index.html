@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Finance App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Smart Finance</h2>
+    <ul>
+      <li onclick="showSection('emi')">🏦 EMI Calculator</li>
+      <li onclick="showSection('fd')">💰 FD Calculator</li>
+      <li onclick="showSection('sip')">📈 SIP Calculator</li>
+      <li onclick="showSection('rd')">📉 RD Calculator</li>
+      <li onclick="showSection('ppf')">📊 PPF Calculator</li>
+      <li onclick="showSection('currency')">💱 Currency Converter</li>
+      <li onclick="showSection('news')">📰 Finance News</li>
+      <li onclick="showSection('loan')">✅ Loan Check & Pay</li>
+      <li onclick="showSection('privacy')">🔐 Privacy Policy</li>
+    </ul>
+  </div>
+  <div class="main">
+    <div id="emi" class="section">
+      <h2>EMI Calculator</h2>
+      <input type="number" id="loanAmount" placeholder="Loan Amount (₹)" />
+      <input type="number" id="interestRate" placeholder="Interest Rate (%)" />
+      <input type="number" id="loanTenure" placeholder="Tenure (in months)" />
+      <button onclick="calculateEMI()">Calculate EMI</button>
+      <div id="emiResult"></div>
+    </div>
+    <div id="fd" class="section"><h2>FD Calculator</h2><p>Coming soon...</p></div>
+    <div id="sip" class="section"><h2>SIP Calculator</h2><p>Coming soon...</p></div>
+    <div id="rd" class="section"><h2>RD Calculator</h2><p>Coming soon...</p></div>
+    <div id="ppf" class="section"><h2>PPF Calculator</h2><p>Coming soon...</p></div>
+    <div id="currency" class="section"><h2>Currency Converter</h2><p>Coming soon...</p></div>
+    <div id="news" class="section"><h2>Finance News</h2><p>Coming soon...</p></div>
+    <div id="loan" class="section"><h2>Loan Check & Payment</h2><p>Coming soon...</p></div>
+    <div id="privacy" class="section"><h2>Privacy Policy</h2><p>This app does not collect any personal data. Your data is safe and used only to calculate financial results. Compliant with AdMob policies.</p></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
